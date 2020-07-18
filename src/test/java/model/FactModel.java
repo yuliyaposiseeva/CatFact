@@ -5,8 +5,9 @@ import lombok.Data;
 @Data
 public class FactModel {
 
+    @SerializedName(value = "_id", alternate ="id")
     /** Индификатор факта. */
-    String _id;
+    String id;
 
     /** Текст факта. */
     String text;
@@ -17,5 +18,6 @@ public class FactModel {
     /** Пользователь, написавший факт. */
 
     UserModel user;
+
 
 }
