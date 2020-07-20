@@ -6,7 +6,9 @@ import lombok.Data;
 @Data
 public class FactModel {
 
-    // Через метод SerializedName, меняем имя ключа.
+    /**
+     * Через метод SerializedName, меняем имя ключа.
+     */
     @SerializedName("_id")
 
     // Индификатор факта.
