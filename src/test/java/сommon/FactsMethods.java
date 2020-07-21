@@ -12,7 +12,7 @@ public class FactsMethods {
      * @param facts массив объектов класса FactsModel
      * @return имя пользователя в формате строки
      */
-    public static String getUserName(List<FactModel> facts) {
+    public static String getMostProductiveUserName(List<FactModel> facts) {
         return facts.
                 stream().
                 collect(Collectors.groupingBy(FactModel::getFullName, Collectors.counting())).
