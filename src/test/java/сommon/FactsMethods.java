@@ -1,7 +1,6 @@
 package сommon;
 
 import model.FactModel;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -13,7 +12,7 @@ public class FactsMethods {
      * @param facts массив объектов класса FactsModel
      * @return имя пользователя в формате строки
      */
-    public static String getMostWrittenUser(List<FactModel> facts) {
+    public static String getUserName(List<FactModel> facts) {
         return facts.
                 stream().
                 collect(Collectors.groupingBy(FactModel::getFullName, Collectors.counting())).
