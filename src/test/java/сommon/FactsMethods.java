@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 public class FactsMethods {
 
+
     /**
      * Метод определяет имя пользователя написавшего больше всего фактов.
      *
