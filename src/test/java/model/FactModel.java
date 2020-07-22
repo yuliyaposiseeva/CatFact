@@ -1,21 +1,21 @@
 package model;
 
+import com.google.gson.annotations.SerializedName;
 import lombok.Data;
 
 @Data
-public class FactModel {
+ public class FactModel {
 
-    /** Индификатор факта. */
-    String _id;
+    // Индификатор факта
+    @SerializedName("_id")
+    String id;
 
-    /** Текст факта. */
+    //Текст факта.
     String text;
 
-    /** Тип факта. */
+    //Тип факта.
     String type;
 
-    /** Пользователь, написавший факт. */
-
+    // Пользователь, написавший факт.
     UserModel user;
-
 }

@@ -5,19 +5,14 @@ import lombok.Data;
 @Data
 public class UserNameModel {
 
-    /** Имя пользователя. */
+    // Имя пользователя.
     String first;
 
-    /** Фамилия Пользователя. */
+    // Фамилия пользователя.
     String last;
 
-    /**
-     * @return
-     * Возвращаем полное имя пользователя.
-     */
 
-    public String getFullName() {
-        return first + " " + last;
+   public String getFullName() {
+        return first+""+last;
     }
-
 }

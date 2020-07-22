@@ -5,10 +5,10 @@ import lombok.Data;
 @Data
 public class UserModel {
 
-    /** Индификатор пользователя. */
-    String _id;
+    // Индификатор пользователя.
+    String id;
 
-    /** Имя пользователя. */
+    // Имя пользователя.
     UserNameModel name;
 
 }

@@ -5,6 +5,7 @@ import model.*;
 import org.apache.http.HttpStatus;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FactsRequest {
     /**
@@ -22,7 +23,7 @@ public class FactsRequest {
                 .assertThat()
                 .extract()
                 .asString();
-         FactsModel allFacts = new Gson().fromJson(response, FactsModel.class);
-         return allFacts.getAll();
+        FactsModel allFacts = new Gson().fromJson(response, FactsModel.class);
+        return allFacts.getAll().stream().filter(fact -> fact.getUser() != null).collect(Collectors.toList());
     }
 }

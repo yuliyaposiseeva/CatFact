@@ -7,7 +7,7 @@ public final class PrepareRequest {
 
     /**
      *
-     * @return
+     * @return url
      */
 
     public static RequestSpecification prepareRequest() {
